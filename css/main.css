@@ -52,9 +52,6 @@ main .div-generico img {
   height: auto;
   margin-bottom: 15px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7); /* Sombra blanca */
-  
-
-
 }
 
 /* Responsivo para pantallas medianas */
@@ -226,7 +223,7 @@ main .persona img {
   width: 80%;
 }
 
-/*HTML nosotros*/
+/*HTML contacto*/
 .contacto {
   display: flex;
   color: whitesmoke;
@@ -235,7 +232,7 @@ main .persona img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 50px;
+  padding-top: 200px;
 }
 .contacto div h1 {
   color: #27AE60;
