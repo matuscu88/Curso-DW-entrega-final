@@ -54,6 +54,10 @@ main .div-generico img {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7); /* Sombra blanca */
 }
 
+.navbar .nav-item *:hover{
+  color: #27AE60;
+}
+
 /* Responsivo para pantallas medianas */
 @media screen and (min-width: 600px) {
   main {
