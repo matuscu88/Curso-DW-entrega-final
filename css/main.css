@@ -52,6 +52,8 @@ main .div-generico img {
   height: auto;
   margin-bottom: 15px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7); /* Sombra blanca */
+  
+
 
 }
 
@@ -198,10 +200,9 @@ main .persona {
 main .persona img {
   width: 100%;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7); /* Sombra blanca */
-
 }
 
-/*    HTML tienda    */
+/*HTML tienda*/
 .tienda {
   padding: 100px;
   padding-bottom: 150px;
@@ -225,7 +226,7 @@ main .persona img {
   width: 80%;
 }
 
-/*    HTML contacto        */
+/*HTML nosotros*/
 .contacto {
   display: flex;
   color: whitesmoke;
@@ -241,7 +242,7 @@ main .persona img {
   font-family: 'Roboto', sans-serif;
 }
 
-/*       HTML servicio tecnico        */
+/*HTML servicio tecnico*/
 .servicio {
   display: flex;
   color: whitesmoke;
@@ -250,10 +251,65 @@ main .persona img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 150px;
+}
+.reparacion {
+  padding-top: 150px;
+}
+.formulario {
+  padding-bottom: 150px;
 }
 .servicio div h1{
-  color: #27AE60; 
+  color: #27AE60;  
+}
+/* Estilo del formulario */
+.formulario form {
+  background-color: #27AE60;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+/* Estilo del input de número */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+input[type="number"]:focus {
+  border-color: #28a745; /* Verde claro */
+  outline: none;
+}
+/* Estilo de los botones */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #28a745; /* Verde */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-right: 10px;
+}
+/* Hover para botones */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #218838; /* Verde oscuro */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+/* Botón de reset de color diferente */
+input[type="reset"] {
+  background-color: #dc3545; /* Rojo */
+}
+input[type="reset"]:hover {
+  background-color: #c82333; /* Rojo oscuro */
 }
 
 /*# sourceMappingURL=main.css.map */
