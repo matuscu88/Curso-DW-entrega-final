@@ -1,0 +1,33 @@
+section {
+    background-color: #E5E5E5;
+  
+    .banner {
+      background-color: black;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .noticia {
+      background-color: #27AE60;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    div {
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+  
+      img {
+        align-items: center;
+        width: 50%;
+      }
+    }
+  }
+  

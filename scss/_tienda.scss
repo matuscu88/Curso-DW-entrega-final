@@ -1,0 +1,25 @@
+.tienda {
+    padding: 300px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  
+    .img {
+      background-color: #2B3035;
+      text-align: center;
+      color: whitesmoke;
+      font-family: 'Roboto', sans-serif;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+  
+      img {
+        width: 80%;
+      }
+    }
+  }
+  

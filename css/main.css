@@ -1,34 +1,35 @@
-/* Resteo de CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* Color de fondo del body */
+
 body {
-  background-color: #2B3035;  
+  background-color: #2B3035;
 }
-/* Menu principal */
+
 main {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1rem;
-  padding-top: 30px;
-  padding-bottom: 50px;
 }
 main h1 {
   color: #27AE60;
 }
+main h4 {
+  padding-bottom: 50px;
+}
 main .div-texto {
+  padding-top: 200px;
   height: auto;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 main .div-generico {
-  text-align: center; 
+  text-align: center;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -44,103 +45,24 @@ main .div-generico .boton {
   text-align: center;
   margin: 0 auto;
 }
-.boton:hover {
-  color: black ; /* para que se ponga negro el boton */
+main .div-generico .boton:hover {
+  color: black;
 }
 main .div-generico img {
-  max-width: 100%;  /* ocupo el 100% del contenedor */
+  max-width: 100%;
   height: auto;
   margin-bottom: 15px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7); /* Sombra blanca */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7);
 }
 
-.navbar .nav-item *:hover{
+.navbar .nav-item *:hover {
   color: #27AE60;
 }
 
-/* Responsivo para pantallas medianas */
-@media screen and (min-width: 600px) {
-  main {
-    grid-template-columns: repeat(3, 1fr); /* paso a pantalla de 3 columnas del mismo tamaño */
-    grid-template-rows: 1fr; 
-  }
-  main .div-texto {
-    grid-column-start: 1; /* la primera fila la mantengo de 4 columnas de ancho */
-    grid-column-end: 4;    
-  }
-  main .div-generico {
-    padding: 1.5rem;
-  }
-  main .div-generico .boton {
-    width: 40%; /*cambio el tamaño del boton */
-  }
-}
-
-/* Responsivo para pantallas grandes */
-@media screen and (min-width: 1024px) {
-  main {
-    grid-template-columns: repeat(3, 1fr); /* paso a pantalla de 3 columnas del mismo tamaño */
-    grid-template-rows: 1fr;
-    padding: 2rem 6rem;
-  }
-  main .div-texto {
-    grid-column-start: 1; /* la primera fila la mantengo de 4 columnas de ancho */
-    grid-column-end: 4;    
-  }
-  main .div-generico {
-    gap: 2rem;
-    padding: 2rem;
-  }
-  main .div-generico .boton {
-    width: 35%;
-  }
-  main .div-generico img {
-    width: 70%;
-  }
-  main .div-generico h2 {
-    font-size: 1.4rem;
-  } 
-  
-}
-section {
-  background-color: #E5E5E5;
-}
-
-/* personalizacion de los banners */
-section .banner {
-  background-color: black;
-}
-section .banner img {
-  width: 100%;
-}
-
-/* personalizacion del banner de noticias */
-section .noticia {  
-  background-color: #27AE60;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-/* personalizacion del banner de marcas */
-section div {
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-}
-section div img {
-  align-items: center;
-  width: 50%;
-}
-
-/* personalizacion de footer */
 footer {
   background-color: #2B3035;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 20px 0;
   width: 100%;
   display: flex;
@@ -164,7 +86,7 @@ footer .footer-links {
 footer .footer-links h4 {
   font-size: 20px;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
   border-bottom: 2px solid #27AE60;
   padding-bottom: 15px;
@@ -180,32 +102,81 @@ footer .footer-links ul li a {
   font-size: 18px;
   text-decoration: none;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: block;
   margin-bottom: 15px;
 }
 
-/*   HTML nosotros   */
-main .persona {
-  display: flex;
-  text-align: center;
-  color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
-  padding: 0.5rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 50px;
-  padding-bottom: 50px;
+@media screen and (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  main .div-texto {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  main .div-generico {
+    padding: 1.5rem;
+  }
+  main .div-generico .boton {
+    width: 40%;
+  }
 }
-main .persona img {
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 2rem 6rem;
+  }
+  main .div-texto {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  main .div-generico {
+    gap: 2rem;
+    padding: 2rem;
+  }
+  main .div-generico .boton {
+    width: 35%;
+  }
+  main .div-generico img {
+    width: 70%;
+  }
+  main .div-generico h2 {
+    font-size: 1.4rem;
+  }
+}
+section {
+  background-color: #E5E5E5;
+}
+section .banner {
+  background-color: black;
+}
+section .banner img {
   width: 100%;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7); /* Sombra blanca */
+}
+section .noticia {
+  background-color: #27AE60;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+section div {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+section div img {
+  align-items: center;
+  width: 50%;
 }
 
-/*HTML tienda*/
 .tienda {
-  padding: 100px;
+  padding: 300px;
   padding-bottom: 150px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -215,7 +186,7 @@ main .persona img {
   background-color: #2B3035;
   text-align: center;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -227,43 +198,37 @@ main .persona img {
   width: 80%;
 }
 
-/*HTML contacto*/
 .contacto {
   display: flex;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-top: 200px;
-}
-.contacto div h1 {
-  color: #27AE60;
-  font-family: 'Roboto', sans-serif;
+  padding-bottom: 100px;
 }
 
-/*HTML servicio tecnico*/
 .servicio {
   display: flex;
   color: whitesmoke;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.reparacion {
-  padding-top: 150px;
+.servicio .reparacion {
+  padding-top: 200px;
 }
-.formulario {
+.servicio .formulario {
   padding-bottom: 150px;
 }
-.servicio div h1{
-  color: #27AE60;  
+.servicio div h1 {
+  color: #27AE60;
 }
-/* Estilo del formulario */
-.formulario form {
+.servicio form {
   background-color: #27AE60;
   padding: 20px;
   border-radius: 10px;
@@ -271,8 +236,8 @@ main .persona img {
   width: 100%;
   max-width: 400px;
 }
-/* Estilo del input de número */
-input[type="number"] {
+
+input[type=number] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -282,14 +247,14 @@ input[type="number"] {
   box-sizing: border-box;
   transition: border-color 0.3s ease;
 }
-input[type="number"]:focus {
-  border-color: #28a745; /* Verde claro */
+input[type=number]:focus {
+  border-color: #28a745;
   outline: none;
 }
-/* Estilo de los botones */
-input[type="submit"],
-input[type="reset"] {
-  background-color: #28a745; /* Verde */
+
+input[type=submit],
+input[type=reset] {
+  background-color: #28a745;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -299,18 +264,35 @@ input[type="reset"] {
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-right: 10px;
 }
-/* Hover para botones */
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background-color: #218838; /* Verde oscuro */
-  transform: scale(1.05); /* Efecto de agrandamiento */
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: #218838;
+  transform: scale(1.05);
 }
-/* Botón de reset de color diferente */
-input[type="reset"] {
-  background-color: #dc3545; /* Rojo */
+input[type=submit][type=reset],
+input[type=reset][type=reset] {
+  background-color: #dc3545;
 }
-input[type="reset"]:hover {
-  background-color: #c82333; /* Rojo oscuro */
+input[type=submit][type=reset]:hover,
+input[type=reset][type=reset]:hover {
+  background-color: #c82333;
+}
+
+main .persona {
+  display: flex;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 10x;
+  padding-bottom: 50px;
+}
+main .persona img {
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7);
 }
 
 /*# sourceMappingURL=main.css.map */

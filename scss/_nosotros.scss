@@ -1,0 +1,20 @@
+main {
+    .persona {
+      display: flex;
+      text-align: center;
+      color: whitesmoke;
+      font-family: 'Roboto', sans-serif;
+      padding: 0.5rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 10x;
+      padding-bottom: 50px;
+  
+      img {
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+  

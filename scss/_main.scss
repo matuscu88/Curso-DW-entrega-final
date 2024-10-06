@@ -1,24 +1,28 @@
-// main.scss
-@import 'variables';
-
-body {
-  background-color: $background-dark;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1rem;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  
+  h1{
+    color: #27AE60;
+  }
 
-  .div-texto, .div-generico {
-    color: $text-color;
-    font-family: $font-family;
+  h4{
+    padding-bottom: 50px;
+  }
+
+  .div-texto {
+    padding-top: 200px;
+    height: auto;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
   }
 
   .div-generico {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -29,7 +33,7 @@ main {
     .boton {
       padding: 0.5rem;
       border-radius: 50px;
-      background-color: $primary-color;
+      background-color: #27AE60;
       width: 40%;
       text-align: center;
       margin: 0 auto;
@@ -43,6 +47,7 @@ main {
       max-width: 100%;
       height: auto;
       margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.7);
     }
   }
 }

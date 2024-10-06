@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-// main.scss
 @import 'reset';
-@import 'variables';
+@import 'body';
 @import 'main';
-@import 'media-queries';
+@import 'navbar';
 @import 'footer';
-@import 'sections';
-@import 'tienda-contacto';
-
+@import 'responsive';
+@import 'section';
+@import 'tienda';
+@import 'contacto';
+@import 'servicio';
+@import 'forms';
+@import 'buttons';
+@import 'nosotros';
