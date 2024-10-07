@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta descripción para el SEO y viewport para la adaptabilidad -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tienda en línea de productos electrónicos, ofertas, nuevos ingresos y más.">
-    <!-- link de bootstrap -->
+    
+    <!-- Vinculación de Bootstrap para estilos prediseñados -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!--  link de mi css -->
+    
+    <!-- Vinculación de mi CSS personalizado -->
     <link rel="stylesheet" href="./css/main.css">
+    
+    <!-- Título de la página -->
     <title> M3G Store </title>
 </head>
 <body>    
 
 <header>
-    <!-- banner principal -->
-    <!-- menu de navegacion, voy a usar BOOTSTRAP -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="box-shadow:3px 3px 3px #888;position:fixed;width:100% ">       <!-- USO navBar de bootstrap -->
+    <!-- Menú de navegación con Bootstrap -->
+    <!-- Estilo adicional: sombra y posición fija para que el menú siempre esté visible -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="box-shadow:3px 3px 3px #888;position:fixed;width:100%">       
       <div class="container-fluid">
+        <!-- Logo de la tienda con link a la página principal -->
         <a class="navbar-brand" href="#">
-          <img src="./img/logosinfondo.png" href="index.html" alt="Logo" width="100%" height="100%">  <!-- defino el logo -->
+          <img src="./img/logosinfondo.png" href="index.html" alt="Logo" width="100%" height="100%">
         </a>
+        <!-- Botón de navegación para dispositivos móviles -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Opciones del menú desplegable -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">  <!-- me, la e es de end -->
+            <!-- Links principales de navegación -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">  <!-- "me" para margin-end -->
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">
-                  Inicio
-                </a>
-              <li class="nav-item">
-                <a class="nav-link active" href="./pages/tienda.html">
-                  Tienda
-                </a>
+                <a class="nav-link active" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./pages/serviciotecnico.html">
-                  Servicio Tecnico
-                </a>
+                <a class="nav-link active" href="./pages/tienda.html">Tienda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./pages/nosotros.html">
-                  Nosotros
-                </a>
+                <a class="nav-link active" href="./pages/serviciotecnico.html">Servicio Técnico</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./pages/contacto.html">
-                  Contacto
-                </a>
+                <a class="nav-link active" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>             
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">   <!-- ms , la s es de start -->           
-              <li class="nav-item"></li>
-                <a class="nav-link active" href="#">
-                    Carrito
-                </a>
+            <!-- Links secundarios (Carrito y Login) ubicados al final (start) -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">  <!-- "ms" para margin-start -->
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Carrito</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                    Login
-                </a>
+                <a class="nav-link active" href="#">Login</a>
               </li>
             </ul>           
         </div>
@@ -67,89 +64,100 @@
     </nav>    
 </header>
 
-<!-- contenido principal, voy a usar GRID y FLEX-->     
+<!-- Sección principal del sitio donde se muestran las categorías y ofertas -->
 <main>
+    <!-- Texto de bienvenida -->
     <div class="div-texto">
-      <h1 class="texto">BIENVENIDOS!</h1>
-      <h4>Aca encontraras todas nuestras novedades</h4>
+      <h1 class="texto">¡BIENVENIDOS!</h1>
+      <h4>Aquí encontrarás todas nuestras novedades</h4>
     </div>     
+
+    <!-- Uso de flexbox/grid para alinear los elementos de las ofertas, ingresos y preventa -->
     <div class="div-generico">
-              <div class="boton">
-                Ofertas
-              </div>
-              <img src="./img/oferta.jpg" alt="muestra oferta">
-              <p> Ofertas exclusivas del mes </p>
+        <!-- Botón que representa una oferta -->
+        <div class="boton">Ofertas</div>
+        <!-- Imagen de muestra para la sección de ofertas -->
+        <img src="./img/oferta.jpg" alt="muestra oferta">
+        <!-- Descripción breve debajo de la imagen -->
+        <p> Ofertas exclusivas del mes </p>
     </div>
     <div class="div-generico">
-              <div class="boton">
-                Ingresos
-              </div>
-              <img src="./img/arribo.jpg" alt="muestra ingresos">
-              <p> Ingresos mas recientes </p>
+        <!-- Botón que representa los nuevos ingresos -->
+        <div class="boton">Ingresos</div>
+        <!-- Imagen de muestra para los ingresos más recientes -->
+        <img src="./img/arribo.jpg" alt="muestra ingresos">
+        <!-- Descripción breve debajo de la imagen -->
+        <p> Ingresos más recientes </p>
     </div>
     <div class="div-generico">
-              <div class="boton">
-                Preventa
-              </div>
-              <img src="./img/preventa.jpg" alt="muestra preventa">
-              <p> Descuento en pedido anticipado </p>            
+        <!-- Botón para la sección de preventa -->
+        <div class="boton">Preventa</div>
+        <!-- Imagen de muestra para la preventa -->
+        <img src="./img/preventa.jpg" alt="muestra preventa">
+        <!-- Descripción breve debajo de la imagen -->
+        <p> Descuento en pedido anticipado </p>            
     </div>
 </main>
 
-<!-- section otra info-->
+<!-- Sección adicional con banners y logos de marcas -->
 <section>
-      <div class="banner">
+    <div class="banner">
         <img src="./img/banner.png" alt="banner">
-      </div>
-      <div class="banner">
+    </div>
+    <div class="banner">
         <img src="./img/crealityimpresoras.png" alt="logo de marcas">
-      </div>
-      <div class="banner">
+    </div>
+    <div class="banner">
         <img src="./img/elegoo.png" alt="logo de marcas">
-      </div>
-      <div class="banner">
+    </div>
+    <div class="banner">
         <img src="./img/serieender.png" alt="logo de marcas">
-      </div>
-      <div>
+    </div>
+    <div>
         <img src="./img/marcas.png" alt="logo de marcas">
-      </div>
-      <div class="noticia">
+    </div>
+    <!-- Sección de suscripción al newsletter -->
+    <div class="noticia">
         <h2>Newsletter</h2>
         <h3>Recibí todas las ofertas</h3>
         <h3>¿Querés recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</h3>
-      </div>
+    </div>
 </section>
 
-<!-- pie de pagina -->
+<!-- Pie de página con enlaces útiles para la tienda y ayuda -->
 <footer class="footer">
     <div class="container">
       <div class="footer-row">
+        <!-- Primer bloque de enlaces: Sección de la tienda -->
         <div class="footer-links">
           <h4>Store</h4>
           <ul>
             <li><a href="pages/tienda.html">Tienda</a></li>
-            <li><a href="./pages/serviciotecnico.html"> Servicio Tecnico</a></li>
+            <li><a href="./pages/serviciotecnico.html"> Servicio Técnico</a></li>
             <li><a href="./pages/contacto.html">Contacto</a></li>
           </ul>
         </div>
+        <!-- Segundo bloque de enlaces: Sección de ayuda -->
         <div class="footer-links">
           <h4>Ayuda</h4>
           <ul>
             <li><a href="#">Preguntas</a></li>
-            <li><a href="#">Envios</a></li>
+            <li><a href="#">Envíos</a></li>
             <li><a href="#">Pago</a></li>
           </ul>
         </div>        
+        <!-- Tercer bloque de enlaces: Información de contacto -->
         <div class="footer-links">
           <h4>Contacto</h4>
           <ul>
-            <li><a href="#">Direccion </a></li>
+            <li><a href="#">Dirección </a></li>
             <li><a href="#">Whatsapp</a></li>
             <li><a href="#">Horario</a></li>
           </ul>        
         </div>
+        <!-- Cuarto bloque de enlaces: Redes sociales -->
         <div class="footer-links">
-          <h4>Siguenos</h4>
+          <h4>Síguenos</h4>
           <ul>
             <li><a href="#">Facebook </a></li>
             <li><a href="#">Instagram </a></li>
@@ -160,6 +168,7 @@
     </div>
 </footer>
 
+<!-- Script de Bootstrap para funcionalidad -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
